@@ -39,6 +39,17 @@
     .mapillary-open-link{position:absolute;right:.75rem;bottom:.75rem;border-radius:999px;background:rgba(0,0,0,.78);padding:.55rem .75rem;color:#fff;font-size:.75rem;font-weight:600}
     .mapillary-image-link:focus-visible{outline:2px solid #fff;outline-offset:-4px}
     @media(max-width:640px){.mapillary-panel-heading{padding:.7rem .8rem}.mapillary-frame{height:15rem}}
+    body.menu-open{overflow:auto}
+    #mobileMenu.mobile-menu{position:fixed;inset:6.75rem auto auto clamp(1rem,4vw,2rem);z-index:40;display:flex;flex-direction:column;gap:.2rem;width:min(20rem,calc(100vw - 2rem));max-height:calc(100dvh - 7.75rem);height:auto;overflow-y:auto;padding:.9rem;border:1px solid rgba(255,255,255,.16);border-radius:1rem;background:#0c0c0c;color:#fff;box-shadow:0 1.25rem 3rem rgba(0,0,0,.35);opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-.35rem);transition:opacity .18s ease,transform .18s ease}
+    #mobileMenu.mobile-menu.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
+    #mobileMenu.mobile-menu .menu-brand{position:static;display:flex;align-items:center;gap:.65rem;padding:.25rem .25rem .75rem;margin:0 0 .2rem;border-bottom:1px solid rgba(255,255,255,.16);color:#bdbdbd;font-size:.75rem;line-height:1.35;text-decoration:none}
+    #mobileMenu.mobile-menu .menu-brand img{width:2.5rem;height:2.5rem;flex:0 0 2.5rem;object-fit:contain}
+    #mobileMenu.mobile-menu .menu-brand span{color:#fff;font-size:.75rem;font-weight:600;line-height:1.3}
+    #mobileMenu.mobile-menu>a:not(.menu-brand){display:flex;align-items:center;min-height:2.7rem;padding:.6rem .75rem;border:0;border-radius:.65rem;color:#f3f3f3;font-size:.92rem;font-weight:500;line-height:1.25;text-decoration:none}
+    #mobileMenu.mobile-menu>a:not(.menu-brand):hover,#mobileMenu.mobile-menu>a:not(.menu-brand):focus-visible{background:rgba(255,255,255,.1);outline:none}
+    #mobileMenu.mobile-menu .menu-meta{margin-top:.25rem;padding:.7rem .25rem .15rem;border-top:1px solid rgba(255,255,255,.14);color:#aaa;font-size:.68rem;line-height:1.45}
+    @media(max-width:640px){#mobileMenu.mobile-menu{top:6.25rem;left:.75rem;width:min(19rem,calc(100vw - 1.5rem));max-height:calc(100dvh - 7rem)}}
+    @media(prefers-reduced-motion:reduce){#mobileMenu.mobile-menu{transition:none}}
  </style>
  <style>
   .brand img,.menu-brand img{border-radius:50%;object-fit:cover;background:transparent}
