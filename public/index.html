@@ -50,6 +50,12 @@
     #mobileMenu.mobile-menu .menu-meta{margin-top:.25rem;padding:.7rem .25rem .15rem;border-top:1px solid rgba(255,255,255,.14);color:#aaa;font-size:.68rem;line-height:1.45}
     @media(max-width:640px){#mobileMenu.mobile-menu{top:6.25rem;left:.75rem;width:min(19rem,calc(100vw - 1.5rem));max-height:calc(100dvh - 7rem)}}
     @media(prefers-reduced-motion:reduce){#mobileMenu.mobile-menu{transition:none}}
+    body{word-spacing:.015em}
+    @media(max-width:640px){
+      .hero h1{font-size:clamp(2.85rem,13.5vw,5.2rem);line-height:1.04;letter-spacing:-.04em;word-spacing:.025em}
+      .section-head h2,.footer-cta h2{line-height:1.08;letter-spacing:-.025em;word-spacing:.03em}
+      .step-card h3,.form-card h3,.map-card h3{line-height:1.2;letter-spacing:-.02em;word-spacing:.025em}
+    }
  </style>
  <style>
   .brand img,.menu-brand img{border-radius:50%;object-fit:cover;background:transparent}
