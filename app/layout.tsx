@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Road Safety Mission — NSS Kerala',
-  description: 'Help make Kerala roads safer. Report accident-prone spots to the NSS Road Safety Mission under PACE.',
+  title: 'SpotSafe',
+  description: 'SpotSafe helps people report risky road locations in Kerala so local teams can make them safer.',
   generator: 'National Service Scheme · PACE',
 }
 
